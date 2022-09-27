@@ -1,0 +1,32 @@
+<!-- https://jump.hackjunction.com/challenges/5FADwrL2bzFZjxzb63BMri -->
+
+<html>
+
+<body>
+    <h1>seconds until new years:</h1>
+    <h2 js-data="countdown"></h2>
+    <script>
+
+        function setCountdown() {
+
+
+            const newYear = new Date(2022, 11, 31).getTime()
+
+            const now = new Date().getTime()
+
+            const ms = newYear - now
+
+            const secs = Math.floor(ms / 1000)
+
+            document.querySelector("[js-data='countdown']").innerHTML = secs
+
+        }
+
+        setInterval(setCountdown, 1000)
+
+        setCountdown()
+
+    </script>
+</body>
+
+</html>

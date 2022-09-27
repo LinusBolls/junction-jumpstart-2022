@@ -14,5 +14,5 @@ def even_or_odd_num_divisors(num):
 
 
 if __name__ == "__main__":
-
-    print(even_or_odd_num_divisors(4))
+    for i in range(100):
+        print(even_or_odd_num_divisors(i))

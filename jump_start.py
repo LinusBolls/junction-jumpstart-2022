@@ -11,12 +11,6 @@ def jump_start(n):
     return n
 
 
-def main():
-
-    for i in range(100):
-
-        print(jump_start(i))
-
-
 if __name__ == "__main__":
-    main()
+    for i in range(100):
+        print(jump_start(i))

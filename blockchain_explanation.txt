@@ -1,0 +1,7 @@
+https://jump.hackjunction.com/challenges/1tWpIYzUGOvno8e8flMUS8
+
+blockchain technology allows decentralized data storage without risk of manipulation.
+
+transactions are conducted through "chains" of "blocks", and in order to manipulate a given transaction an attacker would need to control at least 50% of the blocks making up the transaction.
+
+this is prevented by different mechanisms of limiting the amount of blocks a user can create, such as proof of work or the upcoming proof of stake.

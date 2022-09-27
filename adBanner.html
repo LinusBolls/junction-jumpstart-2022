@@ -1,0 +1,107 @@
+<!-- https://jump.hackjunction.com/challenges/1xsVddwvUzg1rUngfWO8Fd -->
+
+<html>
+
+<head>
+    <style>
+        .banner {
+
+            height: 5rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text {
+
+            color: white;
+
+
+            font-weight: bold;
+
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+
+        body {
+            perspective: 500px;
+        }
+
+        .spinner {
+            text-align: center;
+            animation-name: spin, depth;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(-360deg);
+            }
+        }
+
+        @keyframes depth {
+            0% {
+                text-shadow: 0 0 black;
+            }
+
+            25% {
+                text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+            }
+
+            50% {
+                text-shadow: 0 0 black;
+            }
+
+            75% {
+                text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
+            }
+
+            100% {
+                text-shadow: 0 0 black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        let ding = 0
+
+
+        setInterval(() => {
+
+
+            ding++
+
+            if (ding > 360) ding = 0
+
+            console.log(`hsl(${ding}, 100%, 100%)`)
+
+            document.querySelector(".banner").style.backgroundColor = `hsl(${ding}, 100%, 50%)`
+        }, 1)
+
+
+    </script>
+
+    <div class="banner">
+
+        <img height="40rem"
+            src="https://static.vecteezy.com/system/resources/previews/000/562/188/non_2x/vector-download-download-button-illustration-data.jpg" />
+        <h2 class="text spinner">Join Junction Hackathon</h2>
+
+        <img height="40rem" src="https://c.tenor.com/z2xJqhCpneIAAAAM/wave-hand.gif" />
+    </div>
+</body>
+
+</html>
